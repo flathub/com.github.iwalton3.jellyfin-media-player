@@ -36,12 +36,12 @@
         {
           "type": "git",
           "url": "https://github.com/iwalton3/jellyfin-media-player.git",
-          "commit": "b3b660e74dbdfaa74ea67896a11405d003bec56a"
+          "commit": "7b7f25b6c801c112f6b79c41ed9ce93ae78b92db"
         },
         {
           "type": "archive",
-          "url": "https://github.com/iwalton3/jellyfin-web-jmp/releases/download/jwc-1.7.1/dist.zip",
-          "sha256": "53e3288df75d87210496ae179ba88f47b22d46f5f4ec0cc02138658acef8e781",
+          "url": "https://github.com/iwalton3/jellyfin-web-jmp/releases/download/jwc-10.7.2/dist.zip",
+          "sha256": "ad689fba79e7aa3fb0b39e20ecc7f75776d0872fd39c4e4506f0ef12b6f90210",
           "dest": "dist"
         }
       ],
