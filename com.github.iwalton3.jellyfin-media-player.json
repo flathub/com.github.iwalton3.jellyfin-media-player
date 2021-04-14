@@ -51,7 +51,7 @@
           "only-arches": ["i386", "x86_64"],
           "buildsystem": "simple",
           "build-commands": [
-            "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-manpage-build --enable-vaapi --enable-vdpau --enable-cuda-hwaccel --enable-pulse --enable-alsa --disable-oss-audio --disable-tv --enable-uchardet",
+            "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-manpage-build --enable-vaapi --enable-vdpau --enable-cuda-hwaccel --enable-pulse --enable-alsa --disable-tv --enable-uchardet",
             "python3 waf build",
             "python3 waf install"
           ],
@@ -59,8 +59,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/mpv-player/mpv/archive/v0.29.1.tar.gz",
-              "sha256": "f9f9d461d1990f9728660b4ccb0e8cb5dce29ccaa6af567bec481b79291ca623"
+              "url": "https://github.com/mpv-player/mpv/archive/refs/tags/v0.33.1.tar.gz",
+              "sha256": "100a116b9f23bdcda3a596e9f26be3a69f166a4f1d00910d1789b6571c46f3a9"
             },
             {
               "type": "file",
@@ -81,8 +81,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n8.2.15.8/nv-codec-headers-8.2.15.8.tar.gz",
-                  "sha256": "770b20b7e63adf84d42394b50425cf9ac7925913ac4f77faba552aa525dd437a"
+                  "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.0.10.0/nv-codec-headers-11.0.10.0.tar.gz",
+                  "sha256": "e5d1fe6b18254a3c8747a38714564030e4fda506961a11a7eafb94f2400419bb"
                 }
               ]
             },
@@ -105,8 +105,8 @@
               "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
               "sources": [{
                 "type": "archive",
-                "url": "https://ffmpeg.org/releases/ffmpeg-4.1.6.tar.xz",
-                "sha256": "1f7dc856850c6f5d6def660cb4429afcc60980b3a09815ee2e3e1421d75fdc62"
+                "url": "https://ffmpeg.org/releases/ffmpeg-4.4.tar.xz",
+                "sha256": "06b10a183ce5371f915c6bb15b7b1fffbe046e8275099c96affc29e17645d909"
               }]
             },
             {
@@ -119,8 +119,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://github.com/libass/libass/releases/download/0.14.0/libass-0.14.0.tar.xz",
-                  "sha256": "881f2382af48aead75b7a0e02e65d88c5ebd369fe46bc77d9270a94aa8fd38a2"
+                  "url": "https://github.com/libass/libass/releases/download/0.15.0/libass-0.15.0.tar.xz",
+                  "sha256": "9f09230c9a0aa68ef7aa6a9e2ab709ca957020f842e52c5b2e52b801a7d9e833"
                 }
               ],
               "modules": [
@@ -161,7 +161,7 @@
           "skip-arches": ["i386", "x86_64"],
           "buildsystem": "simple",
           "build-commands": [
-            "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-manpage-build --enable-vaapi --enable-vdpau --enable-pulse --enable-alsa --disable-oss-audio --disable-tv --enable-uchardet",
+            "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-manpage-build --enable-vaapi --enable-vdpau --enable-pulse --enable-alsa --disable-tv --enable-uchardet",
             "python3 waf build",
             "python3 waf install"
           ],
@@ -169,8 +169,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/mpv-player/mpv/archive/v0.29.1.tar.gz",
-              "sha256": "f9f9d461d1990f9728660b4ccb0e8cb5dce29ccaa6af567bec481b79291ca623"
+              "url": "https://github.com/mpv-player/mpv/archive/refs/tags/v0.33.1.tar.gz",
+              "sha256": "100a116b9f23bdcda3a596e9f26be3a69f166a4f1d00910d1789b6571c46f3a9"
             },
             {
               "type": "file",
@@ -191,8 +191,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n8.2.15.8/nv-codec-headers-8.2.15.8.tar.gz",
-                  "sha256": "770b20b7e63adf84d42394b50425cf9ac7925913ac4f77faba552aa525dd437a"
+                  "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.0.10.0/nv-codec-headers-11.0.10.0.tar.gz",
+                  "sha256": "e5d1fe6b18254a3c8747a38714564030e4fda506961a11a7eafb94f2400419bb"
                 }
               ]
             },
@@ -214,9 +214,8 @@
               "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
               "sources": [{
                 "type": "archive",
-                "url": "https://ffmpeg.org/releases/ffmpeg-4.1.6.tar.xz",
-                "sha256": "1f7dc856850c6f5d6def660cb4429afcc60980b3a09815ee2e3e1421d75fdc62"
-              }]
+                "url": "https://ffmpeg.org/releases/ffmpeg-4.4.tar.xz",
+                "sha256": "06b10a183ce5371f915c6bb15b7b1fffbe046e8275099c96affc29e17645d909"              }]
             },
             {
               "name": "libass",
@@ -228,8 +227,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://github.com/libass/libass/releases/download/0.14.0/libass-0.14.0.tar.xz",
-                  "sha256": "881f2382af48aead75b7a0e02e65d88c5ebd369fe46bc77d9270a94aa8fd38a2"
+                  "url": "https://github.com/libass/libass/releases/download/0.15.0/libass-0.15.0.tar.xz",
+                  "sha256": "9f09230c9a0aa68ef7aa6a9e2ab709ca957020f842e52c5b2e52b801a7d9e833"
                 }
               ],
               "modules": [
