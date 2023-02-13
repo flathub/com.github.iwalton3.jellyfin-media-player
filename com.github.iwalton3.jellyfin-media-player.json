@@ -1,10 +1,10 @@
 {
   "app-id": "com.github.iwalton3.jellyfin-media-player",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-21.08",
+  "runtime-version": "5.15-22.08",
   "sdk": "org.kde.Sdk",
   "base": "io.qt.qtwebengine.BaseApp",
-  "base-version": "5.15-21.08",
+  "base-version": "5.15-22.08",
   "command": "jellyfinmediaplayer",
   "finish-args": [
     "--socket=x11",
@@ -35,12 +35,12 @@
         {
           "type": "git",
           "url": "https://github.com/iwalton3/jellyfin-media-player.git",
-          "commit": "f26193386f3552bc7d6849078ef073d1ca94629d"
+          "commit": "09f3f0dcaa14a5e5b70d4e73a13094e204987179"
         },
         {
           "type": "archive",
-          "url": "https://github.com/iwalton3/jellyfin-web-jmp/releases/download/jwc-10.8.1/dist.zip",
-          "sha256": "3f754d5ae77013d1e44801850daf6aa0ae46256cabe5afaa1c9b854813a2c0d6",
+          "url": "https://github.com/iwalton3/jellyfin-web-jmp/releases/download/jwc-10.8.9/dist.zip",
+          "sha256": "4f81cfaf6e8df312aca44a194e23882ebae78f65d98853afa3ec7aceb22d29fa",
           "dest": "dist"
         }
       ],
@@ -50,7 +50,7 @@
           "only-arches": ["i386", "x86_64"],
           "buildsystem": "simple",
           "build-commands": [
-            "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-manpage-build --enable-vaapi --enable-vdpau --enable-cuda-hwaccel --enable-pulse --enable-alsa --disable-tv --enable-uchardet",
+            "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-manpage-build --enable-vaapi --enable-cuda-hwaccel --enable-pulse --enable-alsa --disable-tv --enable-uchardet",
             "python3 waf build",
             "python3 waf install"
           ],
@@ -58,13 +58,13 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/mpv-player/mpv/archive/v0.34.1.tar.gz",
-              "sha256": "32ded8c13b6398310fa27767378193dc1db6d78b006b70dbcbd3123a1445e746"
+              "url": "https://github.com/mpv-player/mpv/archive/v0.35.1.tar.gz",
+              "sha256": "41df981b7b84e33a2ef4478aaf81d6f4f5c8b9cd2c0d337ac142fc20b387d1a9"
             },
             {
               "type": "file",
-              "url": "https://waf.io/waf-2.0.24",
-              "sha256": "93909bca823a675f9f40af7c65b24887c3a3c0efdf411ff1978ba827194bdeb0",
+              "url": "https://waf.io/waf-2.0.25",
+              "sha256": "21199cd220ccf60434133e1fd2ab8c8e5217c3799199c82722543970dc8e38d5",
               "dest-filename": "waf"
             }
           ],
@@ -80,8 +80,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.1.5.1/nv-codec-headers-11.1.5.1.tar.gz",
-                  "sha256": "a28cdde3ac0e9e02c2dde7a1b4de5333b4ac6148a8332ca712da243a3361a0d9"
+                  "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.1.5.2/nv-codec-headers-11.1.5.2.tar.gz",
+                  "sha256": "1442e3159e7311dd71f8fca86e615f51609998939b6a6d405d6683d8eb3af6ee"
                 }
               ]
             },
@@ -98,15 +98,14 @@
                 "--disable-muxers",
                 "--disable-devices",
                 "--enable-vaapi",
-                "--enable-vdpau",
                 "--enable-cuvid",
                 "--enable-libdav1d"
               ],
               "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
               "sources": [{
                 "type": "archive",
-                "url": "https://ffmpeg.org/releases/ffmpeg-5.0.1.tar.xz",
-                "sha256": "ef2efae259ce80a240de48ec85ecb062cecca26e4352ffb3fda562c21a93007b"
+                "url": "https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz",
+                "sha256": "619e706d662c8420859832ddc259cd4d4096a48a2ce1eefd052db9e440eef3dc"
               }]
             },
             {
@@ -143,8 +142,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://github.com/libass/libass/releases/download/0.16.0/libass-0.16.0.tar.xz",
-                  "sha256": "5dbde9e22339119cf8eed59eea6c623a0746ef5a90b689e68a090109078e3c08"
+                  "url": "https://github.com/libass/libass/releases/download/0.17.0/libass-0.17.0.tar.xz",
+                  "sha256": "971e2e1db59d440f88516dcd1187108419a370e64863f70687da599fdf66cc1a"
                 }
               ]
             },
@@ -160,8 +159,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.7.tar.xz",
-                  "sha256": "3fc79408ae1d84b406922fa9319ce005631c95ca0f34b205fad867e8b30e45b1"
+                  "url": "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz",
+                  "sha256": "e97a60cfc00a1c147a674b097bb1422abd9fa78a2d9ce3f3fdcc2e78a34ac5f0"
                 }
               ]
             }
@@ -172,21 +171,21 @@
           "skip-arches": ["i386", "x86_64"],
           "buildsystem": "simple",
           "build-commands": [
-            "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-manpage-build --enable-vaapi --enable-vdpau --enable-pulse --enable-alsa --disable-tv --enable-uchardet",
+            "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-manpage-build --enable-vaapi --enable-pulse --enable-alsa --disable-tv --enable-uchardet",
             "python3 waf build",
             "python3 waf install"
           ],
           "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
           "sources": [
             {
-              "type": "git",
-              "url": "https://github.com/mpv-player/mpv",
-              "commit": "0e76372e86d92982e17219fda6597f92ca67e7e8"
+              "type": "archive",
+              "url": "https://github.com/mpv-player/mpv/archive/v0.35.1.tar.gz",
+              "sha256": "41df981b7b84e33a2ef4478aaf81d6f4f5c8b9cd2c0d337ac142fc20b387d1a9"
             },
             {
               "type": "file",
-              "url": "https://waf.io/waf-2.0.23",
-              "sha256": "28a2e4583314a162cfcbffefb8a9202c1d7869040d30b5852da479b76d9c0491",
+              "url": "https://waf.io/waf-2.0.25",
+              "sha256": "21199cd220ccf60434133e1fd2ab8c8e5217c3799199c82722543970dc8e38d5",
               "dest-filename": "waf"
             }
           ],
@@ -204,14 +203,13 @@
                 "--disable-muxers",
                 "--disable-devices",
                 "--enable-vaapi",
-                "--enable-vdpau",
                 "--enable-libdav1d"
               ],
               "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
               "sources": [{
                 "type": "archive",
-                "url": "https://ffmpeg.org/releases/ffmpeg-5.0.1.tar.xz",
-                "sha256": "ef2efae259ce80a240de48ec85ecb062cecca26e4352ffb3fda562c21a93007b"
+                "url": "https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz",
+                "sha256": "619e706d662c8420859832ddc259cd4d4096a48a2ce1eefd052db9e440eef3dc"
               }]
             },
             {
@@ -248,8 +246,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://github.com/libass/libass/releases/download/0.16.0/libass-0.16.0.tar.xz",
-                  "sha256": "5dbde9e22339119cf8eed59eea6c623a0746ef5a90b689e68a090109078e3c08"
+                  "url": "https://github.com/libass/libass/releases/download/0.17.0/libass-0.17.0.tar.xz",
+                  "sha256": "971e2e1db59d440f88516dcd1187108419a370e64863f70687da599fdf66cc1a"
                 }
               ]
             },
@@ -265,8 +263,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.7.tar.xz",
-                  "sha256": "3fc79408ae1d84b406922fa9319ce005631c95ca0f34b205fad867e8b30e45b1"
+                  "url": "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz",
+                  "sha256": "e97a60cfc00a1c147a674b097bb1422abd9fa78a2d9ce3f3fdcc2e78a34ac5f0"
                 }
               ]
             }
