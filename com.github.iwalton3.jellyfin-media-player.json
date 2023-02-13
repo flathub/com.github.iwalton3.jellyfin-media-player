@@ -15,6 +15,7 @@
     "--device=all",
     "--talk-name=org.freedesktop.PowerManagement",
     "--talk-name=org.freedesktop.ScreenSaver",
+    "--own-name=org.mpris.MediaPlayer2.mpv",
     "--system-talk-name=org.freedesktop.login1"
   ],
   "modules": [
