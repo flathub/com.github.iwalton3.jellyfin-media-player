@@ -37,7 +37,7 @@
         {
           "type": "git",
           "url": "https://github.com/iwalton3/jellyfin-media-player.git",
-          "commit": "09f3f0dcaa14a5e5b70d4e73a13094e204987179"
+          "commit": "b78e06a6b84081e43249d2a507d4818ee498bddc"
         },
         {
           "type": "archive",
