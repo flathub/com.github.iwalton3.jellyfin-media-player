@@ -41,8 +41,8 @@
         },
         {
           "type": "archive",
-          "url": "https://github.com/iwalton3/jellyfin-web-jmp/releases/download/jwc-10.8.9/dist.zip",
-          "sha256": "4f81cfaf6e8df312aca44a194e23882ebae78f65d98853afa3ec7aceb22d29fa",
+          "url": "https://repo.jellyfin.org/releases/server/portable/stable/web/jellyfin-web_10.8.9_portable.tar.gz",
+          "sha256": "e5b74735c370f665adc5122a9037e615ceb49fce00060a172328979adcb69ef9",
           "dest": "dist"
         }
       ],
