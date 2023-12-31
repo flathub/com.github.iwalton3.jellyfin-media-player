@@ -46,8 +46,8 @@
         },
         {
           "type": "archive",
-          "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/10.8.12/jellyfin-web_10.8.12_portable.tar.gz",
-          "sha256": "a0da090a98bd230c8fc718e8c3d648418a69c6cc3dc5a878af08689f578a3562",
+          "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/10.8.13/jellyfin-web_10.8.13_portable.tar.gz",
+          "sha256": "cbd00c3c3a56d7d17d63dc6060b5cbc011820a83cde64b7f9c93690fbac174d6",
           "dest": "dist",
           "x-checker-data": {
             "type": "html",
@@ -149,8 +149,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/FFmpeg/FFmpeg.git",
-                  "tag": "n6.1",
-                  "commit": "d4ff0020b40b524a490cf62eccbd3a318f4c0e58",
+                  "tag": "n6.1.1",
+                  "commit": "e38092ef9395d7049f871ef4d5411eb410e283e0",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^n([\\d.]+)$"
@@ -286,8 +286,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/KhronosGroup/glslang.git",
-                      "tag": "13.1.1",
-                      "commit": "36d08c0d940cf307a23928299ef52c7970d8cee6",
+                      "tag": "14.0.0",
+                      "commit": "a91631b260cba3f22858d6c6827511e636c2458a",
                       "dest": "third_party/glslang",
                       "x-checker-data": {
                         "type": "git",
