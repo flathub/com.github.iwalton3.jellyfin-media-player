@@ -149,8 +149,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/FFmpeg/FFmpeg.git",
-                  "tag": "n6.1",
-                  "commit": "d4ff0020b40b524a490cf62eccbd3a318f4c0e58",
+                  "tag": "n6.1.1",
+                  "commit": "e38092ef9395d7049f871ef4d5411eb410e283e0",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^n([\\d.]+)$"
@@ -258,8 +258,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/google/shaderc.git",
-                      "tag": "v2023.7",
-                      "commit": "3882b16417077aa8eaa7b5775920e7ba4b8a224d",
+                      "tag": "v2023.8",
+                      "commit": "e6edd6d48fa5bdd9d176794c6810fae7f8e938e1",
                       "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -286,8 +286,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/KhronosGroup/glslang.git",
-                      "tag": "13.1.1",
-                      "commit": "36d08c0d940cf307a23928299ef52c7970d8cee6",
+                      "tag": "14.0.0",
+                      "commit": "a91631b260cba3f22858d6c6827511e636c2458a",
                       "dest": "third_party/glslang",
                       "x-checker-data": {
                         "type": "git",
