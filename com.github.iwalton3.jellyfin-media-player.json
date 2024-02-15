@@ -46,8 +46,8 @@
         },
         {
           "type": "archive",
-          "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/10.8.12/jellyfin-web_10.8.12_portable.tar.gz",
-          "sha256": "a0da090a98bd230c8fc718e8c3d648418a69c6cc3dc5a878af08689f578a3562",
+          "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/10.8.13/jellyfin-web_10.8.13_portable.tar.gz",
+          "sha256": "cbd00c3c3a56d7d17d63dc6060b5cbc011820a83cde64b7f9c93690fbac174d6",
           "dest": "dist",
           "x-checker-data": {
             "type": "html",
