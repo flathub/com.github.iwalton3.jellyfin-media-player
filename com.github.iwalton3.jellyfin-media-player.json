@@ -46,8 +46,8 @@
         },
         {
           "type": "archive",
-          "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/10.8.12/jellyfin-web_10.8.12_portable.tar.gz",
-          "sha256": "a0da090a98bd230c8fc718e8c3d648418a69c6cc3dc5a878af08689f578a3562",
+          "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/10.8.13/jellyfin-web_10.8.13_portable.tar.gz",
+          "sha256": "cbd00c3c3a56d7d17d63dc6060b5cbc011820a83cde64b7f9c93690fbac174d6",
           "dest": "dist",
           "x-checker-data": {
             "type": "html",
@@ -150,8 +150,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/FFmpeg/FFmpeg.git",
-                  "tag": "n6.1",
-                  "commit": "d4ff0020b40b524a490cf62eccbd3a318f4c0e58",
+                  "tag": "n6.1.1",
+                  "commit": "e38092ef9395d7049f871ef4d5411eb410e283e0",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^n([\\d.]+)$"
@@ -227,8 +227,8 @@
                 {
                   "type": "git",
                   "url": "https://code.videolan.org/videolan/libplacebo.git",
-                  "tag": "v6.338.1",
-                  "commit": "2805a0d01c029084ab36bf5d0e3c8742012a0b27",
+                  "tag": "v6.338.2",
+                  "commit": "64c1954570f1cd57f8570a57e51fb0249b57bb90",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^v([\\d.]+)$"
@@ -259,8 +259,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/google/shaderc.git",
-                      "tag": "v2023.7",
-                      "commit": "3882b16417077aa8eaa7b5775920e7ba4b8a224d",
+                      "tag": "v2024.0",
+                      "commit": "d792558a8902cb39b1c237243cc4edab226513a5",
                       "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -287,8 +287,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/KhronosGroup/glslang.git",
-                      "tag": "13.1.1",
-                      "commit": "36d08c0d940cf307a23928299ef52c7970d8cee6",
+                      "tag": "14.1.0",
+                      "commit": "ee2f5d09eaf8f4e8d0d598bd2172fce290d4ca60",
                       "dest": "third_party/glslang",
                       "x-checker-data": {
                         "type": "git",
