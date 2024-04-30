@@ -46,8 +46,8 @@
         },
         {
           "type": "archive",
-          "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/10.8.12/jellyfin-web_10.8.12_portable.tar.gz",
-          "sha256": "a0da090a98bd230c8fc718e8c3d648418a69c6cc3dc5a878af08689f578a3562",
+          "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/10.8.13/jellyfin-web_10.8.13_portable.tar.gz",
+          "sha256": "cbd00c3c3a56d7d17d63dc6060b5cbc011820a83cde64b7f9c93690fbac174d6",
           "dest": "dist",
           "x-checker-data": {
             "type": "html",
@@ -81,8 +81,8 @@
             {
               "type": "git",
               "url": "https://github.com/mpv-player/mpv.git",
-              "tag": "v0.37.0",
-              "commit": "818ce7c51a6b9179307950e919983e0909942098",
+              "tag": "v0.38.0",
+              "commit": "02254b92dd237f03aa0a151c2a68778c4ea848f9",
               "x-checker-data": {
                 "type": "git",
                 "tag-pattern": "^v([\\d.]+)$"
@@ -90,8 +90,8 @@
             },
             {
               "type": "file",
-              "url": "https://waf.io/waf-2.0.26",
-              "sha256": "dcec3e179f9c33a66544f1b3d7d91f20f6373530510fa6a858cddb6bfdcde14b",
+              "url": "https://waf.io/waf-2.0.27",
+              "sha256": "fe10e266c05063752d098787a7b934cd0d61092c8b072884f8a679c1c596dd6a",
               "dest-filename": "waf",
               "x-checker-data": {
                 "type": "anitya",
@@ -115,8 +115,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/FFmpeg/nv-codec-headers.git",
-                  "tag": "n12.1.14.0",
-                  "commit": "1889e62e2d35ff7aa9baca2bceb14f053785e6f1",
+                  "tag": "n12.2.72.0",
+                  "commit": "c69278340ab1d5559c7d7bf0edf615dc33ddbba7",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^n([\\d.]+)$"
@@ -150,8 +150,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/FFmpeg/FFmpeg.git",
-                  "tag": "n6.1",
-                  "commit": "d4ff0020b40b524a490cf62eccbd3a318f4c0e58",
+                  "tag": "n7.0",
+                  "commit": "083443d67cb159ce469e5d902346b8d0c2cd1c93",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^n([\\d.]+)$"
@@ -227,8 +227,8 @@
                 {
                   "type": "git",
                   "url": "https://code.videolan.org/videolan/libplacebo.git",
-                  "tag": "v6.338.1",
-                  "commit": "2805a0d01c029084ab36bf5d0e3c8742012a0b27",
+                  "tag": "v6.338.2",
+                  "commit": "64c1954570f1cd57f8570a57e51fb0249b57bb90",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^v([\\d.]+)$"
@@ -259,8 +259,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/google/shaderc.git",
-                      "tag": "v2023.7",
-                      "commit": "3882b16417077aa8eaa7b5775920e7ba4b8a224d",
+                      "tag": "v2024.1",
+                      "commit": "47a9387ef5b3600d30d84c71ec77a59dc7db46fa",
                       "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -269,8 +269,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/KhronosGroup/SPIRV-Tools.git",
-                      "tag": "v2023.2",
-                      "commit": "44d72a9b36702f093dd20815561a56778b2d181e",
+                      "tag": "v2024.1",
+                      "commit": "04896c462d9f3f504c99a4698605b6524af813c1",
                       "dest": "third_party/spirv-tools",
                       "x-checker-data": {
                         "type": "git",
@@ -287,8 +287,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/KhronosGroup/glslang.git",
-                      "tag": "13.1.1",
-                      "commit": "36d08c0d940cf307a23928299ef52c7970d8cee6",
+                      "tag": "14.1.0",
+                      "commit": "ee2f5d09eaf8f4e8d0d598bd2172fce290d4ca60",
                       "dest": "third_party/glslang",
                       "x-checker-data": {
                         "type": "git",
