@@ -37,24 +37,26 @@
         {
           "type": "git",
           "url": "https://github.com/iwalton3/jellyfin-media-player.git",
-          "tag": "v1.9.1",
-          "commit": "086fd6a5217ffcb907fa6c34f9fbbc6f59bb4e60",
-          "x-checker-data": {
-            "type": "git",
-            "tag-pattern": "^v([\\d.]+)$"
-          }
+          "commit": "2b00125cacda003d41d5036e60702d4b31b8d18f"
         },
         {
           "type": "archive",
-          "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/10.8.13/jellyfin-web_10.8.13_portable.tar.gz",
-          "sha256": "cbd00c3c3a56d7d17d63dc6060b5cbc011820a83cde64b7f9c93690fbac174d6",
-          "dest": "dist",
+          "url": "https://repo.jellyfin.org/files/server/portable/latest/any/jellyfin_10.9.1.tar.gz",
+          "sha256": "b3b4a4e79255d338a5fb20a204f773d0fb2fd9547e79787cd69ba8b590d0b022",
+          "dest": "jellyfin-server",
           "x-checker-data": {
             "type": "html",
-            "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/",
-            "version-pattern": "(\\d+\\.\\d+\\.\\d+)\\/",
-            "url-template": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/$version/jellyfin-web_${version}_portable.tar.gz"
+            "url": "https://repo.jellyfin.org/files/server/portable/latest/any/",
+            "version-pattern": "jellyfin_(\\d+\\.\\d+\\.\\d+).tar.gz.gz",
+            "url-template": "https://repo.jellyfin.org/files/server/portable/latest/any/jellyfin_${version}.tar.gz.gz"
           }
+        },
+        {
+          "type": "shell",
+          "commands": [
+            "mv jellyfin-server/jellyfin-web dist",
+            "rm -r jellyfin-server"
+          ]
         }
       ],
       "modules": [
@@ -258,13 +260,9 @@
                     {
                       "type": "git",
                       "url": "https://github.com/KhronosGroup/SPIRV-Tools.git",
-                      "tag": "v2024.1",
-                      "commit": "04896c462d9f3f504c99a4698605b6524af813c1",
-                      "dest": "third_party/spirv-tools",
-                      "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                      }
+                      "tag": "v2023.2",
+                      "commit": "44d72a9b36702f093dd20815561a56778b2d181e",
+                      "dest": "third_party/spirv-tools"
                     },
                     {
                       "type": "git",
