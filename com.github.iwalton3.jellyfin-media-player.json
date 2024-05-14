@@ -138,7 +138,8 @@
                 "--disable-devices",
                 "--enable-vaapi",
                 "--enable-cuvid",
-                "--enable-libdav1d"
+                "--enable-libdav1d",
+                "--enable-gpl"
               ],
               "cleanup": [
                 "/lib/pkgconfig",
