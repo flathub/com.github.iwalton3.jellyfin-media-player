@@ -1,10 +1,10 @@
 {
   "app-id": "com.github.iwalton3.jellyfin-media-player",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-22.08",
+  "runtime-version": "5.15-23.08",
   "sdk": "org.kde.Sdk",
   "base": "io.qt.qtwebengine.BaseApp",
-  "base-version": "5.15-22.08",
+  "base-version": "5.15-23.08",
   "command": "jellyfinmediaplayer",
   "finish-args": [
     "--socket=fallback-x11",
@@ -37,24 +37,26 @@
         {
           "type": "git",
           "url": "https://github.com/iwalton3/jellyfin-media-player.git",
-          "tag": "v1.9.1",
-          "commit": "086fd6a5217ffcb907fa6c34f9fbbc6f59bb4e60",
-          "x-checker-data": {
-            "type": "git",
-            "tag-pattern": "^v([\\d.]+)$"
-          }
+          "commit": "2b00125cacda003d41d5036e60702d4b31b8d18f"
         },
         {
           "type": "archive",
-          "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/10.8.13/jellyfin-web_10.8.13_portable.tar.gz",
-          "sha256": "cbd00c3c3a56d7d17d63dc6060b5cbc011820a83cde64b7f9c93690fbac174d6",
-          "dest": "dist",
+          "url": "https://repo.jellyfin.org/files/server/portable/latest/any/jellyfin_10.9.1.tar.gz",
+          "sha256": "b3b4a4e79255d338a5fb20a204f773d0fb2fd9547e79787cd69ba8b590d0b022",
+          "dest": "jellyfin-server",
           "x-checker-data": {
             "type": "html",
-            "url": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/",
-            "version-pattern": "(\\d+\\.\\d+\\.\\d+)\\/",
-            "url-template": "https://repo.jellyfin.org/releases/server/portable/versions/stable/web/$version/jellyfin-web_${version}_portable.tar.gz"
+            "url": "https://repo.jellyfin.org/files/server/portable/latest/any/",
+            "version-pattern": "jellyfin_(\\d+\\.\\d+\\.\\d+).tar.gz.gz",
+            "url-template": "https://repo.jellyfin.org/files/server/portable/latest/any/jellyfin_${version}.tar.gz.gz"
           }
+        },
+        {
+          "type": "shell",
+          "commands": [
+            "mv jellyfin-server/jellyfin-web dist",
+            "rm -r jellyfin-server"
+          ]
         }
       ],
       "modules": [
@@ -81,22 +83,11 @@
             {
               "type": "git",
               "url": "https://github.com/mpv-player/mpv.git",
-              "tag": "v0.37.0",
-              "commit": "818ce7c51a6b9179307950e919983e0909942098",
+              "tag": "v0.38.0",
+              "commit": "02254b92dd237f03aa0a151c2a68778c4ea848f9",
               "x-checker-data": {
                 "type": "git",
                 "tag-pattern": "^v([\\d.]+)$"
-              }
-            },
-            {
-              "type": "file",
-              "url": "https://waf.io/waf-2.0.26",
-              "sha256": "dcec3e179f9c33a66544f1b3d7d91f20f6373530510fa6a858cddb6bfdcde14b",
-              "dest-filename": "waf",
-              "x-checker-data": {
-                "type": "anitya",
-                "project-id": 5116,
-                "url-template": "https://waf.io/waf-$version"
               }
             }
           ],
@@ -115,8 +106,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/FFmpeg/nv-codec-headers.git",
-                  "tag": "n12.1.14.0",
-                  "commit": "1889e62e2d35ff7aa9baca2bceb14f053785e6f1",
+                  "tag": "n12.2.72.0",
+                  "commit": "c69278340ab1d5559c7d7bf0edf615dc33ddbba7",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^n([\\d.]+)$"
@@ -150,8 +141,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/FFmpeg/FFmpeg.git",
-                  "tag": "n6.1.1",
-                  "commit": "e38092ef9395d7049f871ef4d5411eb410e283e0",
+                  "tag": "n7.0",
+                  "commit": "083443d67cb159ce469e5d902346b8d0c2cd1c93",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^n([\\d.]+)$"
@@ -259,8 +250,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/google/shaderc.git",
-                      "tag": "v2023.8",
-                      "commit": "e6edd6d48fa5bdd9d176794c6810fae7f8e938e1",
+                      "tag": "v2024.1",
+                      "commit": "47a9387ef5b3600d30d84c71ec77a59dc7db46fa",
                       "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -271,11 +262,7 @@
                       "url": "https://github.com/KhronosGroup/SPIRV-Tools.git",
                       "tag": "v2023.2",
                       "commit": "44d72a9b36702f093dd20815561a56778b2d181e",
-                      "dest": "third_party/spirv-tools",
-                      "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                      }
+                      "dest": "third_party/spirv-tools"
                     },
                     {
                       "type": "git",
@@ -287,8 +274,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/KhronosGroup/glslang.git",
-                      "tag": "14.0.0",
-                      "commit": "a91631b260cba3f22858d6c6827511e636c2458a",
+                      "tag": "14.2.0",
+                      "commit": "e8dd0b6903b34f1879520b444634c75ea2deedf5",
                       "dest": "third_party/glslang",
                       "x-checker-data": {
                         "type": "git",
