@@ -47,8 +47,8 @@
           "x-checker-data": {
             "type": "html",
             "url": "https://repo.jellyfin.org/files/server/portable/latest/any/",
-            "version-pattern": "jellyfin_(\\d+\\.\\d+\\.\\d+).tar.gz.gz",
-            "url-template": "https://repo.jellyfin.org/files/server/portable/latest/any/jellyfin_${version}.tar.gz.gz"
+            "version-pattern": "jellyfin_(\\d+\\.\\d+\\.\\d+).tar.gz",
+            "url-template": "https://repo.jellyfin.org/files/server/portable/latest/any/jellyfin_${version}.tar.gz"
           }
         },
         {
