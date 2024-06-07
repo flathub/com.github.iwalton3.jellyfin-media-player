@@ -37,26 +37,7 @@
         {
           "type": "git",
           "url": "https://github.com/iwalton3/jellyfin-media-player.git",
-          "commit": "1ca6cb8df847bb8a168364afd4cb4b5f12630454"
-        },
-        {
-          "type": "archive",
-          "url": "https://repo.jellyfin.org/files/server/portable/latest/any/jellyfin_10.9.2.tar.gz",
-          "sha256": "758913bb0df02962488dbd4688b27b1c05885c5ba87bb7af42038b6145cfcdff",
-          "dest": "jellyfin-server",
-          "x-checker-data": {
-            "type": "html",
-            "url": "https://repo.jellyfin.org/files/server/portable/latest/any/",
-            "version-pattern": "jellyfin_(\\d+\\.\\d+\\.\\d+).tar.gz.gz",
-            "url-template": "https://repo.jellyfin.org/files/server/portable/latest/any/jellyfin_${version}.tar.gz.gz"
-          }
-        },
-        {
-          "type": "shell",
-          "commands": [
-            "mv jellyfin-server/jellyfin-web dist",
-            "rm -r jellyfin-server"
-          ]
+          "commit": "1075ff722c32ada6102612c88b7fc1984d8686dd"
         }
       ],
       "modules": [
