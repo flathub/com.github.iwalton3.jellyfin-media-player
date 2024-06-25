@@ -122,8 +122,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/FFmpeg/FFmpeg.git",
-                  "tag": "n7.0",
-                  "commit": "083443d67cb159ce469e5d902346b8d0c2cd1c93",
+                  "tag": "n7.0.1",
+                  "commit": "af25a4bfd2503caf3ee485b27b99b620302f5718",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^n([\\d.]+)$"
@@ -147,8 +147,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/libass/libass.git",
-                  "tag": "0.17.1",
-                  "commit": "e8ad72accd3a84268275a9385beb701c9284e5b3",
+                  "tag": "0.17.2",
+                  "commit": "cbb48cc4f2f076300004b8b06a86bec55281d0c2",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^([\\d.]+)$"
@@ -255,8 +255,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/KhronosGroup/glslang.git",
-                      "tag": "14.2.0",
-                      "commit": "e8dd0b6903b34f1879520b444634c75ea2deedf5",
+                      "tag": "14.3.0",
+                      "commit": "fa9c3deb49e035a8abcabe366f26aac010f6cbfb",
                       "dest": "third_party/glslang",
                       "x-checker-data": {
                         "type": "git",
