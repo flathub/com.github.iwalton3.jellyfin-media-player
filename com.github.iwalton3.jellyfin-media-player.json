@@ -12,7 +12,7 @@
     "--socket=pulseaudio",
     "--share=ipc",
     "--share=network",
-    "--device=all",
+    "--device=dri",
     "--talk-name=org.freedesktop.PowerManagement",
     "--talk-name=org.freedesktop.ScreenSaver",
     "--own-name=org.mpris.MediaPlayer2.mpv",
