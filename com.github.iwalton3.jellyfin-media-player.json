@@ -64,8 +64,8 @@
             {
               "type": "git",
               "url": "https://github.com/mpv-player/mpv.git",
-              "tag": "v0.38.0",
-              "commit": "02254b92dd237f03aa0a151c2a68778c4ea848f9",
+              "tag": "v0.39.0",
+              "commit": "a0fba7be57f3822d967b04f0f6b6d6341e7516e7",
               "x-checker-data": {
                 "type": "git",
                 "tag-pattern": "^v([\\d.]+)$"
@@ -87,8 +87,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/FFmpeg/nv-codec-headers.git",
-                  "tag": "n12.2.72.0",
-                  "commit": "c69278340ab1d5559c7d7bf0edf615dc33ddbba7",
+                  "tag": "n13.0.19.0",
+                  "commit": "e844e5b26f46bb77479f063029595293aa8f812d",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^n([\\d.]+)$"
@@ -122,8 +122,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/FFmpeg/FFmpeg.git",
-                  "tag": "n7.0.2",
-                  "commit": "e3a61e91030696348b56361bdf80ea358aef4a19",
+                  "tag": "n7.1",
+                  "commit": "b08d7969c550a804a59511c7b83f2dd8cc0499b8",
                   "x-checker-data": {
                     "type": "git",
                     "tag-pattern": "^n([\\d.]+)$"
@@ -231,8 +231,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/google/shaderc.git",
-                      "tag": "v2024.2",
-                      "commit": "3ac03b8ad85a8e328a6182cddee8d05810bd5a2c",
+                      "tag": "v2025.1",
+                      "commit": "0968768c61d4eb7dd861114412e904bb3d59b7b6",
                       "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -255,8 +255,8 @@
                     {
                       "type": "git",
                       "url": "https://github.com/KhronosGroup/glslang.git",
-                      "tag": "14.3.0",
-                      "commit": "fa9c3deb49e035a8abcabe366f26aac010f6cbfb",
+                      "tag": "15.1.0",
+                      "commit": "1062752a891c95b2bfeed9e356562d88f9df84ac",
                       "dest": "third_party/glslang",
                       "x-checker-data": {
                         "type": "git",
