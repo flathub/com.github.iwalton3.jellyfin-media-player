@@ -17,6 +17,7 @@
     "mkdir -p /app/lib/ffmpeg"
   ],
   "finish-args": [
+    "--socket=wayland",
     "--socket=fallback-x11",
     "--socket=pulseaudio",
     "--share=ipc",
