@@ -47,12 +47,7 @@
         {
           "type": "git",
           "url": "https://github.com/iwalton3/jellyfin-media-player.git",
-          "tag": "v1.11.1",
-          "commit": "41ba4348addd46b806ba7bd1a0c92b457ae5ed7c",
-          "x-checker-data": {
-            "type": "git",
-            "tag-pattern": "^v([\\d.]+)$"
-          }
+          "commit": "41ba4348addd46b806ba7bd1a0c92b457ae5ed7c"
         }
       ],
       "modules": [
